@@ -101,9 +101,7 @@ export function TaskList() {
             ref={inputEl}
             className={isTaskTitleEmpty ? 'empty' : ''}
             type="text"
-            placeholder={
-              isTaskTitleEmpty ? 'Digite uma todo' : 'Adicionar novo todo'
-            }
+            placeholder={'Adicionar novo todo'}
             onChange={(e) => {
               setNewTaskTitle(e.target.value);
               setIsTaskTitleEmpty(false);
